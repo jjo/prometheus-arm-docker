@@ -3,7 +3,7 @@ Status](https://travis-ci.org/jjo/prometheus-arm-docker.svg?branch=master)](http
 # Prometheus ARM Docker Images
 
 Forked from the original great work by
-<https://github.com/jjo/prometheus-arm-docker>
+<https://github.com/tantalic/prometheus-arm-docker>
 
 ARM [Docker][docker] images for [Prometheus][prometheus] for
 deployment on Raspberry Pi and similar boards.
