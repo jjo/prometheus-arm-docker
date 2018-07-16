@@ -2,6 +2,7 @@ FORCE = 0
 OS = linux
 # DOCKER_TAG = quay.io/jjo/$(ARCH)-$(APP):v$(VERSION)
 DOCKER_TAG = xjjo/$(ARCH)-$(APP):v$(VERSION)
+DOCKER_TAG_LATEST = xjjo/$(ARCH)-$(APP):latest
 DOCKER_MAINTAINER = "JuanJo Ciarlante <juanjosec+docker@gmail.com>"
 IMAGE_URL="http://quay.io/api/v1/repository/jjo/$(ARCH)-prometheus/tag/v$(VERSION)/images"
 
@@ -81,6 +82,8 @@ Makefile.ver:
 	$(eval include Makefile.ver)
 	echo "INFO: Pushing $(@)"
 	docker push $(DOCKER_TAG)
+	docker tag $(DOCKER_TAG) $(DOCKER_TAG_LATEST)
+	docker push $(DOCKER_TAG_LATEST)
 	touch $(@)
 
 test: build
