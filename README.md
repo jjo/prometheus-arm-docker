@@ -16,6 +16,16 @@ x86 Docker images][prom-docker].
 No hardcorded version (only major release(s) per directory), see
 `Makefile.common` and e.g. `prometheus-v1/Makefile`.
 
+## Docker images built:
+
+| Binary     | ARM 32  | ARM 64 |
+| ---------- | ------- | ------ |
+| prometheus | [xjjo/armv7-prometheus](https://hub.docker.com/r/xjjo/armv7-prometheus) | [xjjo/armv7-prometheus](https://hub.docker.com/r/xjjo/arm64-prometheus) |
+| alertmanager | [xjjo/armv7-alertmanager](https://hub.docker.com/r/xjjo/armv7-alertmanager) | [xjjo/armv7-alertmanager](https://hub.docker.com/r/xjjo/arm64-alertmanager) |
+| pushgateway | [xjjo/armv7-pushgateway](https://hub.docker.com/r/xjjo/armv7-pushgateway) | [xjjo/armv7-pushgateway](https://hub.docker.com/r/xjjo/arm64-pushgateway) |
+| node_exporter | [xjjo/armv7-node_exporter](https://hub.docker.com/r/xjjo/armv7-node_exporter) | [xjjo/armv7-node_exporter](https://hub.docker.com/r/xjjo/arm64-node_exporter) |
+| blackbox_exporter | [xjjo/armv7-blackbox_exporter](https://hub.docker.com/r/xjjo/armv7-blackbox_exporter) | [xjjo/armv7-blackbox_exporter](https://hub.docker.com/r/xjjo/arm64-blackbox_exporter) |
+
 [docker]: https://www.docker.com
 [prometheus]: https://prometheus.io/
 [prom-downloads]: https://prometheus.io/download/
