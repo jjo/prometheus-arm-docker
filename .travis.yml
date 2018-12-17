@@ -1,13 +1,11 @@
 language: bash
-
 os:
   - linux
-
 services:
   - docker
 env:
   global:
-    - TEST_FOO=1
+    secure: "SGMM/3WRmK1RgtmrtRdVU62zU7WNk0t/MRGP3boIWkvv7/mwnWIXw8/0xdSXNUGGEWjsKggsHS+pGfpznBCaagmN4IhUYlDQp07tcH0LR9+OLsakAtaiXF3F7dfjH4odNsGhdVQC3yCdOEBJkBbQEDd+jrowfN3Y930sNwAEf8oYVm4smiFKXFO95OQQ/h2vraeM3TNX4W1XtgK04nRRrmEkPHxHsVzEtKC85+u+UDqpYB8XdBROsgvlBy968DehBo3NvP7n5hZpSgwHqEDm1UxMSp42AfAjUFSLJhocOCPjxGaetvR4xchoPG/00LVCwd4sLEw9F83qxuzwWADGnkZc+z+tLZq/r5oL6HzEE+ySW5/wEq+lb6ZGDymeilDYg06NXH6wvCg0DSTUjxn7f/ksaIgvKJwtGKwG3oewHnzT1dCt95xJontC7Pvk9rA9WDDFa4Bd+O2udO9K9SL40ryeXXTGwUiy68bO1seUArnUtq7zZWVrgxyhkCX6F2446AifHavi0ZFdE/jVjOCjxwDHDYuIg66iHJV4ob43orrQBtwff8R+XuvpWOvFiUWnuiflUKJ7L04byIJjom94+A9NRwHAXO6QsZowpqCfSxEF78Ei8I/4Vtgga+3NAK6L5sxuspuicHRkXbI6erLU21vM2W1eyVvA/hXbGFysEj4="
 
 before_install: # update to 17.09 to get COPY --from (multistage builds) and COPY --chown
   - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
